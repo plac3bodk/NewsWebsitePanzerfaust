@@ -1,0 +1,35 @@
+// main: ../main.sass
+   ____      _     _   _                         _
+  / ___|_ __(_) __| | | | __ _ _   _  ___  _   _| |_
+ | |  _| '__| |/ _` | | |/ _` | | | |/ _ \| | | | __|
+ | |_| | |  | | (_| | | | (_| | |_| | (_) | |_| | |_
+  \____|_|  |_|\__,_| |_|\__,_|\__, |\___/ \__,_|\__|
+                               |___/
+
+.grid
+  +grid
+  width: 100%
+  grid-template-columns: repeat(12, 1fr)
+  overflow-x: hidden
+  &.grid
+    grid-template-rows: 50px 300px auto 200px 75px
+    +bp("l")
+      grid-template-rows: 50px 50px 300px auto 150px 25px
+
+.header
+  grid-column: 1 / -1
+
+.nav
+  grid-column: 1 / -1
+
+.hero
+  grid-column: 1 / -1
+
+.main
+  grid-column: 1 / -1
+
+.footer
+  grid-column: 1 / -1
+
+.copyright
+  grid-column: 1 / -1

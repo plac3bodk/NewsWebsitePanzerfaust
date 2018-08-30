@@ -1,0 +1,70 @@
+// main: ../main.sass
+  ___                   _
+ |_ _|_ __  _ __  _   _| |_ ___
+  | || '_ \| '_ \| | | | __/ __|
+  | || | | | |_) | |_| | |_\__ \
+ |___|_| |_| .__/ \__,_|\__|___/
+           |_|
+
+.search
+  display: none
+
+  +bp('l')
+    position: relative
+
+    display: block
+.search__input
+    width: 0
+
+    color: white
+    border: none
+    border-bottom: 1px solid silver
+    outline: none
+    background: none
+
+    +font-size(18px)
+    +trans(width)
+    &:focus
+      border: none
+      border-bottom: 1px solid white
+    &.toggled
+      width: 300px
+
+      +trans(width)
+.search__button
+    color: $primary-text
+    border: none
+    background: none
+
+    +font-size($iconSize)
+.search__toggle
+  position: absolute
+  top: 0
+  right: 0
+
+  cursor: pointer
+
+  color: white
+
+.modal__search
+  width: 100%
+.modal__search-form
+  width: 80%
+
+  +center('both')
+
+.modal__search-input
+  width: 100%
+
+  text-align: center
+
+  color: white
+  border: none
+  border-bottom: 1px solid $secondary
+  outline: none
+  background: none
+  +trans('border-bottom')
+  +font-size(24px)
+  &:focus
+    border: none
+    border-bottom: 1px solid white

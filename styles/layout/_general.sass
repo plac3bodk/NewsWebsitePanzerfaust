@@ -1,0 +1,36 @@
+// main: ../main.sass
+   ____                           _       _         _
+  / ___| ___ _ __   ___ _ __ __ _| |  ___| |_ _   _| | ___  ___
+ | |  _ / _ \ '_ \ / _ \ '__/ _` | | / __| __| | | | |/ _ \/ __|
+ | |_| |  __/ | | |  __/ | | (_| | | \__ \ |_| |_| | |  __/\__ \
+  \____|\___|_| |_|\___|_|  \__,_|_| |___/\__|\__, |_|\___||___/
+                                              |___/
+
+body
+  height: 100%
+
+  background: $bgColor
+
+.main
+  padding: 15px
+
+  +bp('l')
+    padding: 15px 100px
+.copyright
+  margin-bottom: 50px
+  padding: 0 15px
+
+  text-align: center
+
+  color: $primary
+  background: $primary-light
+
+  line-height: 25px
+
+  +bp('l')
+    margin-bottom: 0
+    padding: 0 100px
+    text-align: left
+
+    background: $primary
+    color: $primary-light

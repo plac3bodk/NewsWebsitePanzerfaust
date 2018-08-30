@@ -1,0 +1,70 @@
+// main: ../main.sass
+  _   _             _             _   _               _                         _
+ | \ | | __ ___   _(_) __ _  __ _| |_(_) ___  _ __   | | __ _ _   _  ___  _   _| |_
+ |  \| |/ _` \ \ / / |/ _` |/ _` | __| |/ _ \| '_ \  | |/ _` | | | |/ _ \| | | | __|
+ | |\  | (_| |\ V /| | (_| | (_| | |_| | (_) | | | | | | (_| | |_| | (_) | |_| | |_
+ |_| \_|\__,_| \_/ |_|\__, |\__,_|\__|_|\___/|_| |_| |_|\__,_|\__, |\___/ \__,_|\__|
+                      |___/                                   |___/
+
+
+.nav
+  display: none
+  +bp('l')
+    background: $navColor
+    +flex
+
+.nav__item
+  text-decoration: none
+  +flex
+  flex: 1
+  justify-content: center
+  align-items: center
+  color: $secondary-text
+  font-family: $contentFont
+  font-weight: bold
+  +trans(background)
+  &:hover
+    background: $secondary-dark
+    color: $primary-text
+
+
+.footerNav
+  position: fixed
+  +flex
+  background: $primary
+  height: 50px
+  width: 100%
+  bottom: 0
+  left: 0
+  border-top: 1px solid $primary-dark
+  +trans(bottom)
+  +bp('l')
+    display: none
+  &.toggled
+    bottom: 100%
+.footerNav__button
+  cursor: pointer
+  position: relative
+  width: 50%
+  height: 100%
+  i
+    +font-size($iconSize)
+    color: $secondary
+    +center(both)
+.footerNav__button--search
+  border-right: 1px solid $primary-dark
+
+.modal__nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.modal__nav-item
+  font-size: $h1
+  text-decoration: none
+  color: $secondary
+  padding: 10px
+  border-bottom: 1px solid $primary-light
+  width: 100%
+  text-align: center
