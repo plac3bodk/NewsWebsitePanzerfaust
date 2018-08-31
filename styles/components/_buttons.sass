@@ -6,3 +6,33 @@
  |____/ \__,_|\__|\__\___/|_| |_|___/
 
 .button
+  width: 100%
+  padding: 15px
+  margin-bottom: 10px
+  cursor: pointer
+  font-size: $h3
+  +trans(background)
+
+.button--primary
+  background-color: $secondary
+  border: 1px solid $secondary-dark
+  color: $primary-text
+  &:hover
+    background: $secondary-dark
+    border: 1px solid $primary
+
+.button--secondary
+  background-color: $primary
+  border: 1px solid $primary-dark
+  color: $primary-text
+  &:hover
+    background: $primary-dark
+
+.button--subtle
+  background-color: $bgColor
+  border: 1px solid $primary
+  color: $secondary-text
+  &:hover
+    background: $secondary-dark
+    border: 1px solid $primary
+    color: $primary-text
