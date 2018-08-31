@@ -4,7 +4,7 @@
 Simple dark themed news website
 
 ### Contents
-* 7-1 structed Sass
+* 7-1 structured Sass
 * BEM naming convention (to some degree)
 * 3 page types
  * Frontpage
