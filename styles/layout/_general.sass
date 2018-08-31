@@ -16,6 +16,16 @@ body
 
   +bp('l')
     padding: 15px 100px
+.main__header
+
+.main__text
+  max-height: 100px
+  overflow: hidden
+  +trans(max-height)
+  &.toggled
+    max-height: 1000px
+
+
 .copyright
   margin-bottom: 50px
   padding: 0 15px
