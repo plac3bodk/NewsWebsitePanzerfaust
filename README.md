@@ -7,6 +7,6 @@ Simple dark themed news website
 * 7-1 structured Sass
 * BEM naming convention (to some degree)
 * 3 page types
- * Frontpage
- * Category page
- * Article page
+  * Frontpage
+  * Category page
+  * Article page
